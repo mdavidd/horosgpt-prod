@@ -17,7 +17,7 @@ export const Footer = () => {
 
           {/* Center - Navigation (stacked for mobile) */}
           <nav className='flex flex-col lg:flex-row gap-5 lg:gap-7'>
-            <Link href="#" className="text-white/70 hover:text-white text-xs md:text-sm transition whitespace-nowrap">O Horoskopu</Link>
+            <Link href="/learn-astrology" className="text-white/70 hover:text-white text-xs md:text-sm transition whitespace-nowrap">O Horoskopu</Link>
             <Link href="#" className="text-white/70 hover:text-white text-xs md:text-sm transition whitespace-nowrap">Politika Privatnosti</Link>
             <Link href="#" className="text-white/70 hover:text-white text-xs md:text-sm transition whitespace-nowrap">Uvjeti Korištenja</Link>
             <Link href="#" className="text-white/70 hover:text-white text-xs md:text-sm transition whitespace-nowrap">Kontakt</Link>
