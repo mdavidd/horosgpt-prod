@@ -7,20 +7,21 @@ import gridLines from '@/assets/grid-lines.png';
 
 export const GridBackground = () => {
   const [scrollY, setScrollY] = useState(0);
+  const [isClient, setIsClient] = useState(false); // Track if we are on the client-side
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
-  
-  // Adjust the background position based on scroll or mouse position
-  const backgroundX = useTransform(mouseX, [0, window.innerWidth], [-10, 10]);
-  const backgroundY = useTransform(mouseY, [0, window.innerHeight], [-10, 10]);
+
+  // Initialize the useTransform hooks unconditionally
+  const backgroundX = useTransform(mouseX, [0, 1000], [-10, 10]); // Using default values
+  const backgroundY = useTransform(mouseY, [0, 1000], [-10, 10]); // Using default values
 
   useEffect(() => {
-    // Event listener for scroll
+    setIsClient(true); // Indicate that we're on the client side
+
     const handleScroll = () => {
       setScrollY(window.scrollY);
     };
 
-    // Event listener for mouse movement
     const handleMouseMove = (e: MouseEvent) => {
       mouseX.set(e.clientX);
       mouseY.set(e.clientY);
@@ -37,7 +38,6 @@ export const GridBackground = () => {
 
   return (
     <section className="relative h-screen overflow-hidden">
-
       {/* Stars background animation (continuous movement) */}
       <motion.div
         className="absolute inset-0"
@@ -68,11 +68,9 @@ export const GridBackground = () => {
           backgroundRepeat: 'repeat',
           backgroundPosition: 'center',
           zIndex: 2,
-          x: backgroundX, // Grid reacts to mouseX position
-          y: backgroundY, // Grid reacts to scroll position
+          transform: `translate(${backgroundX}px, ${backgroundY}px)`, // Apply the transform here
         }}
       ></motion.div>
-
     </section>
   );
 };

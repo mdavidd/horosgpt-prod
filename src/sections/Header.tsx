@@ -9,7 +9,9 @@ export const Header = () => {
       <div className="flex justify-between items-center md:border border-white/15 md:p-2.5 rounded-xl max-w-2xl mx-auto backdrop-blur">
         <div>
           <div className='border h-10 w-10 rounded-lg inline-flex justify-center items-center border-white/15'>
+          <Link href="/">
           <LogoIcon className="h-8 w-8"/>
+          </Link>
           </div>   
         </div>
         <div className='hidden md:block'>

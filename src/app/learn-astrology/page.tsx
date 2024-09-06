@@ -1,12 +1,32 @@
-import { GridBackground } from '@/sections/GridBackground'
-import React from 'react'
+import { Footer } from '@/sections/Footer';
+import { GridBackground } from '@/sections/GridBackground';
+import { Header } from '@/sections/Header';
+import LearnAstroMenuContent from '@/sections/LearnAstroMenuContent'; // Rename this import to avoid recursion
+import React from 'react';
 
-const LearnAstroMenu = () => {
+const LearnAstroPage = () => {
   return (
-    <div>
-      <GridBackground/>
+    <div className="relative">
+      {/* Background Section */}
+      <div className="absolute inset-0 -z-10">
+        <GridBackground />
+      </div>
+
+      {/* Content Sections */}
+      <div className="relative z-10">
+        <Header />
+      </div>
+
+      {/* Content of learnAstrology */}
+      <div className="relative z-10">
+        <LearnAstroMenuContent /> {/* Renamed to avoid recursion */}
+      </div>
+
+      <div className="relative z-10">
+        <Footer />
+      </div>
     </div>
-  )
+  );
 }
 
-export default LearnAstroMenu
+export default LearnAstroPage;
