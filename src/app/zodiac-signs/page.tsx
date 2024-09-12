@@ -2,10 +2,10 @@ import { Footer } from '@/sections/Footer';
 import { GridBackground } from '@/sections/GridBackground';
 import { Header } from '@/sections/Header';
 import PlanetsAndSigns from '@/sections/PlanetsAndSignsSectionNatal';
-import WhatIsNatal from '@/sections/WhatIsNatal';
+import ZodiacOverview from '@/sections/ZodiacOverview';
 import React from 'react';
 
-const WhatIsNatalPage = () => {
+const ZodiacSigns = () => {
   return (
     <div className="relative">
       {/* Background Section */}
@@ -17,14 +17,10 @@ const WhatIsNatalPage = () => {
       <div className="relative z-10">
         <Header />
       </div>
-      
-      <div className="relative z-10">
-        <PlanetsAndSigns/>
-      </div>
 
       {/* Content of learnAstrology */}
       <div className="relative z-10">
-        <WhatIsNatal/>
+        <ZodiacOverview/>
       </div>
       
 
@@ -35,4 +31,4 @@ const WhatIsNatalPage = () => {
   );
 }
 
-export default WhatIsNatalPage;
+export default ZodiacSigns;

@@ -23,10 +23,11 @@ export const Footer = () => {
             <Link href="#" className="text-white/70 hover:text-white text-xs md:text-sm transition whitespace-nowrap">Kontakt</Link>
           </nav>
 
-          {/* Right - Instagram Icon (stacked for mobile) */}
+          {/* INSTAGRAM IKONICA, NE TREBA MI JOS...
           <div className='flex lg:justify-end'>
             <InstaSocial className="text-white/40 hover:text-white" />
           </div>
+          */}
 
         </div>
       </div>

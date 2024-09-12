@@ -17,12 +17,14 @@ export const Header = () => {
         <div className='hidden md:block'>
           <nav className='flex gap-8 text-sm'>
             <Link href="/learn-astrology" className='text-white/70 hover:text-white transition'>O Horoskopu</Link>
-            <Link href="#" className='text-white/70 hover:text-white transition'>Natalne Karte</Link>
-            <Link href="#" className='text-white/70 hover:text-white transition'>Moj Znak</Link>
+            <Link href="/learn-astrology/what-is-natal-chart" className='text-white/70 hover:text-white transition'>Natalne Karte</Link>
+            <Link href="/zodiac-signs" className='text-white/70 hover:text-white transition'>Moj Znak</Link>
           </nav>
         </div>
         <div className='flex gap-4 items-center'>
-          <Button>Učlani se!</Button>
+          <Link href="/coming-soon">
+          <Button>Prijavi se!</Button>
+          </Link>
           <MenuIcon className="md:hidden"/>
         </div>
       </div>

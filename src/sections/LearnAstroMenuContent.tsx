@@ -23,7 +23,7 @@ const LearnAstroMenuContent = () => {
           </Link>
 
           {/* Card 2 */}
-          <Link href="/" className="block group">
+          <Link href="/learn-astrology/what-is-natal-chart" className="block group">
             <div className="border border-gray-400 rounded-lg p-8 transition-all group-hover:bg-white/15 backdrop-blur-sm/10 shadow-lg bg-white/10">
               <h2 className="text-2xl font-semibold mb-2 text-white">2. Natalne Karte</h2>
               <p className="text-gray-300">
@@ -33,7 +33,7 @@ const LearnAstroMenuContent = () => {
           </Link>
 
           {/* Card 3 */}
-          <Link href="/" className="block group">
+          <Link href="/zodiac-signs" className="block group">
             <div className="border border-gray-400 rounded-lg p-8 transition-all group-hover:bg-white/15 backdrop-blur-sm/10 shadow-lg bg-white/10">
               <h2 className="text-2xl font-semibold mb-2 text-white">3. Horoskopski znakovi</h2>
               <p className="text-gray-300">

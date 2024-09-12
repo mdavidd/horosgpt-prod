@@ -3,6 +3,7 @@ import { Button } from "@/components/Button";
 import startBg from "@/assets/stars.png";
 import { motion, useMotionValueEvent, useScroll, useTransform} from "framer-motion";
 import { useRef } from "react";
+import Link from "next/link";
 
 
 
@@ -86,14 +87,16 @@ export const Hero = () => {
       </div>
       </motion.div>
     <div className="container relative mt-16">
-      <h1 className="text-7xl md:text-[122px] md:leading-none font-semibold tracking-tighter bg-white bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(74,32,138,.5))] text-transparent bg-clip-text text-center">
+      <h1 className="text-6xl md:text-[122px] md:leading-none font-semibold tracking-tighter bg-white bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(74,32,138,.5))] text-transparent bg-clip-text text-center">
         HOROSGPT {/* OVO JE FORMATTING I CS NASLOVA */}
         </h1>
       <p className="text-lg md:text-xl text-white/70 mt-5 text-center max-w-xl mx-auto">
         Saznajte više o sebi kombinacijom znanja starih civilizacija, čitanjima NASA-e te umjetnom inteligencijom!
       </p>
       <div className="flex justify-center mt-5">
-        <Button>Učlani se!</Button>
+        <Link href="/coming-soon">
+        <Button>Prijavi se!</Button>
+        </Link>
       </div>
       
     </div>
