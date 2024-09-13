@@ -25,8 +25,9 @@ const ZodiacOverview = () => {
           Dio astrologije koji vjerojatno najbolje poznajete je Sunčev znak
         </h1>
         <p className="text-gray-300 mb-6">
-          Kada kažete: "Ja sam Riba", mislite na svoj Sunčev znak u znaku Riba.
-        </p>
+  Kada kažete: &quot;Ja sam Riba&quot;, mislite na svoj Sunčev znak u znaku Riba.
+</p>
+
         <p className="text-gray-400 mb-16">
           Sunčev znak odgovara znaku Zodijaka koji je Sunce zauzimalo u trenutku vašeg rođenja. Otkrijte više o svakom znaku ispod.
         </p>

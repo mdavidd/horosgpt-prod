@@ -100,14 +100,17 @@ const CancerSection = () => {
           <div className="border-t border-gray-700 pt-16 mt-16 space-y-8">
             <h2 className="text-3xl font-semibold text-white mb-4">Rak u ljubavi, seksu i romantici</h2>
 
-            {/* How to Seduce a Cancer */}
-            <div>
-              <h3 className="text-2xl font-semibold text-white mb-2">Kako zavesti Raka?</h3>
-              <p className="text-gray-300 text-lg leading-relaxed">
-              Rakovi su emotivni, ali ono što stvarno osvaja njihovo srce je osjećaj sigurnosti i emocionalne povezanosti. Zavođenje Raka znači pažljivo pristupanje kroz duboke razgovore i iskazivanje brižnih gesti. Primjerice, umjesto velikih romantičnih pokreta, Rak će više cijeniti večer provedenu u kućnoj atmosferi, gdje možete zajedno kuhati večeru i razgovarati o vašim snovima i strahovima. Stvorite atmosferu intimnosti — svijeće, lagana glazba, i osjećaj doma. Rak voli osjećaj pripadnosti, pa im pokažite da su vam prioritet.
-              </p ><p className="text-gray-300 text-lg leading-relaxed">
-Šarmirat ćete ih ako pokažete svoju nježniju stranu i budete spremni slušati. Jednostavna pitanja poput "Kako se stvarno osjećaš?" ili "Što ti pruža osjećaj sigurnosti?" mogu biti ključna u stvaranju emotivne povezanosti s Rakom. Budite strpljivi i ne forsirajte ih da se otvore, jer kada vam jednom daju svoje povjerenje, to je dugoročno.              </p>
-            </div>
+{/* How to Seduce a Cancer */}
+<div>
+  <h3 className="text-2xl font-semibold text-white mb-2">Kako zavesti Raka?</h3>
+  <p className="text-gray-300 text-lg leading-relaxed">
+    Rakovi su emotivni, ali ono što stvarno osvaja njihovo srce je osjećaj sigurnosti i emocionalne povezanosti. Zavođenje Raka znači pažljivo pristupanje kroz duboke razgovore i iskazivanje brižnih gesti. Primjerice, umjesto velikih romantičnih pokreta, Rak će više cijeniti večer provedenu u kućnoj atmosferi, gdje možete zajedno kuhati večeru i razgovarati o vašim snovima i strahovima. Stvorite atmosferu intimnosti — svijeće, lagana glazba, i osjećaj doma. Rak voli osjećaj pripadnosti, pa im pokažite da su vam prioritet.
+  </p>
+  <p className="text-gray-300 text-lg leading-relaxed">
+    Šarmirat ćete ih ako pokažete svoju nježniju stranu i budete spremni slušati. Jednostavna pitanja poput &quot;Kako se stvarno osjećaš?&quot; ili &quot;Što ti pruža osjećaj sigurnosti?&quot; mogu biti ključna u stvaranju emotivne povezanosti s Rakom. Budite strpljivi i ne forsirajte ih da se otvore, jer kada vam jednom daju svoje povjerenje, to je dugoročno.
+  </p>
+</div>
+
 
             {/* Does Cancer Fall in Love Quickly? */}
             <div>
@@ -127,14 +130,17 @@ Rak će, recimo, više uživati u dugim šetnjama uz more gdje mogu osjetiti sig
 Također, partneri koji uživaju u zajedničkom stvaranju intimnih trenutaka — bilo da se radi o jednostavnom gledanju filma ispod deke ili zajedničkom uređenju doma — uvijek su privlačni Raku. Oni traže partnere koji cijene male stvari u životu, poput zajedničkog ručka ili šetnje po prirodi, jer to gradi emocionalnu povezanost.              </p>
             </div>
 
-            {/* How to Love a Cancer */}
-            <div>
-              <h3 className="text-2xl font-semibold text-white mb-2">Kako voljeti Raka?</h3>
-              <p className="text-gray-300 text-lg leading-relaxed">
-              Voljeti Raka znači biti emocionalno otvoren i prisutan. Oni traže partnere koji su spremni biti tu za njih u trenucima ranjivosti i emocionalnih previranja. Rakovi su izuzetno intuitivni i brzo će osjetiti kada netko nije iskren ili ih ne shvaća ozbiljno. Ako volite Raka, važno je da pokažete svoju ljubav kroz kontinuirane geste — zagrljaji, nježne riječi, i male pažnje koje govore "tu sam za tebe."
-</p ><p className="text-gray-300 text-lg leading-relaxed">
-Primjerice, ako primijetite da je Rak imao težak dan, organizirajte zajednički opuštajući trenutak, možda kroz pripremu njihovog omiljenog jela ili jednostavno kroz razgovor o tome što ih muči. Rakovi će to cijeniti više od bilo kojeg materijalnog poklona. Njima je najvažnije znati da su voljeni i da imaju emocionalnu podršku.              </p>
-            </div>
+{/* How to Love a Cancer */}
+<div>
+  <h3 className="text-2xl font-semibold text-white mb-2">Kako voljeti Raka?</h3>
+  <p className="text-gray-300 text-lg leading-relaxed">
+    Voljeti Raka znači biti emocionalno otvoren i prisutan. Oni traže partnere koji su spremni biti tu za njih u trenucima ranjivosti i emocionalnih previranja. Rakovi su izuzetno intuitivni i brzo će osjetiti kada netko nije iskren ili ih ne shvaća ozbiljno. Ako volite Raka, važno je da pokažete svoju ljubav kroz kontinuirane geste — zagrljaji, nježne riječi, i male pažnje koje govore &quot;tu sam za tebe.&quot;
+  </p>
+  <p className="text-gray-300 text-lg leading-relaxed">
+    Primjerice, ako primijetite da je Rak imao težak dan, organizirajte zajednički opuštajući trenutak, možda kroz pripremu njihovog omiljenog jela ili jednostavno kroz razgovor o tome što ih muči. Rakovi će to cijeniti više od bilo kojeg materijalnog poklona. Njima je najvažnije znati da su voljeni i da imaju emocionalnu podršku.
+  </p>
+</div>
+
 
             {/* Who is Cancer's Soulmate? */}
             <div>
