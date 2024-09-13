@@ -9,12 +9,12 @@ const ZodiacSigns = () => {
   return (
     <div className="relative">
       {/* Background Section */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 -z-20">
         <GridBackground />
       </div>
 
       {/* Content Sections */}
-      <div className="relative z-10">
+      <div className="relative z-30">
         <Header />
       </div>
 

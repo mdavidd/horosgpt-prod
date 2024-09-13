@@ -11,7 +11,7 @@ const ComingSoonSection = () => {
 
         {/* Description */}
         <p className="text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-          Aplikacija koja će vam omogućiti analizu horoskopa, znakova i astrologije uz snagu umjetne inteligencije.
+          Aplikacija koja će Vam omogućiti analizu horoskopa, znakova i astrologije uz snagu umjetne inteligencije.
           Pratite nas za više informacija o službenom lansiranju!
         </p>
 

@@ -8,18 +8,18 @@ const LearnAstroPage = () => {
   return (
     <div className="relative">
       {/* Background Section */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 -z-20"> {/* Make sure the background stays behind all content */}
         <GridBackground />
       </div>
 
-      {/* Content Sections */}
-      <div className="relative z-10">
+      {/* Header should always stay on top */}
+      <div className="relative z-30"> {/* z-30 to keep header above all content */}
         <Header />
       </div>
 
-      {/* Content of learnAstrology */}
-      <div className="relative z-10">
-        <ComingSoonSection /> {/* Renamed to avoid recursion */}
+      {/* Main content sections */}
+      <div className="relative z-10"> {/* Ensure main content stays below the header */}
+        <ComingSoonSection />
       </div>
 
       <div className="relative z-10">
@@ -27,6 +27,6 @@ const LearnAstroPage = () => {
       </div>
     </div>
   );
-}
+};
 
 export default LearnAstroPage;

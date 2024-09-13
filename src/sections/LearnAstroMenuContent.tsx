@@ -43,14 +43,12 @@ const LearnAstroMenuContent = () => {
           </Link>
 
           {/* Card 4 */}
-          <Link href="/" className="block group">
-            <div className="border border-gray-400 rounded-lg p-8 transition-all group-hover:bg-white/15 backdrop-blur-sm/10 shadow-lg bg-white/10">
+            <div className="border border-gray-400 rounded-lg p-8 transition-all backdrop-blur-sm/10 shadow-lg bg-white/50">
               <h2 className="text-2xl font-semibold mb-2 text-white">4. Astrološke kuće</h2>
               <p className="text-gray-300">
-                Najvažnija od svih kuća je prva kuća, poznata kao Ascendent ili podznak, što označava uzlazni znak.
+                USKORO....
               </p>
             </div>
-          </Link>
         </div>
       </div>
     </section>

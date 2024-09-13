@@ -1,76 +1,71 @@
-"use client"; // Ensure the file is client-side
-
-import { useState, useEffect } from 'react';
-import { motion, useMotionValue, useTransform } from 'framer-motion';
-import starsBg from '@/assets/stars.png';
-import gridLines from '@/assets/grid-lines.png';
+"use client";
+import { useEffect, useRef } from "react";
+import { motion, useMotionValue, useTransform } from "framer-motion";
+import starsBg from "@/assets/stars.png";
+import gridLines from "@/assets/grid-lines.png";
 
 export const GridBackground = () => {
-  const [scrollY, setScrollY] = useState(0);
-  const [isClient, setIsClient] = useState(false); // Track if we are on the client-side
+  const sectionRef = useRef(null);
+
+  // Mouse movement for subtle background animations
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
-
-  // Initialize the useTransform hooks unconditionally
-  const backgroundX = useTransform(mouseX, [0, 1000], [-10, 10]); // Using default values
-  const backgroundY = useTransform(mouseY, [0, 1000], [-10, 10]); // Using default values
+  const backgroundX = useTransform(mouseX, [0, 1000], [-10, 10]);
+  const backgroundY = useTransform(mouseY, [0, 1000], [-10, 10]);
 
   useEffect(() => {
-    setIsClient(true); // Indicate that we're on the client side
-
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
     const handleMouseMove = (e: MouseEvent) => {
       mouseX.set(e.clientX);
       mouseY.set(e.clientY);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener("mousemove", handleMouseMove);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener("mousemove", handleMouseMove);
     };
   }, [mouseX, mouseY]);
 
   return (
-    <section className="relative h-screen overflow-hidden">
-      {/* Stars background animation (continuous movement) */}
+    <section ref={sectionRef} className="relative h-full w-full overflow-hidden">
+      {/* Stars background with subtle movement */}
       <motion.div
         className="absolute inset-0"
         style={{
           backgroundImage: `url(${starsBg.src})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundPosition: "center",
+          backgroundSize: "cover",
           zIndex: 1,
+          backgroundPositionX: backgroundX,
+          backgroundPositionY: backgroundY,
         }}
         animate={{
-          x: ['0%', '10%', '0%'], // Subtle movement horizontally
-          y: ['0%', '10%', '0%'], // Subtle movement vertically
+          x: ["0%", "10%", "0%"],
+          y: ["0%", "10%", "0%"],
         }}
         transition={{
-          duration: 30, // Slow movement
-          repeat: Infinity, // Infinite loop
-          ease: 'linear', // Smooth continuous animation
+          duration: 50,
+          repeat: Infinity,
+          ease: "linear",
         }}
-      ></motion.div>
+      />
 
-      {/* Grid lines animation (responds to scroll and mouse movement) */}
+      {/* Smaller and dimmer grid lines background */}
       <motion.div
-        className='absolute inset-0 bg-[rgb(74,32,138)] [mask-image:radial-gradient(50%_50%_at_50%_35%,black,transparent)] bg-blend-overlay'
+        className="absolute inset-0"
         style={{
           backgroundImage: `url(${gridLines.src})`,
-          opacity: 0.5,
-          backgroundSize: '60px 60px',
-          backgroundRepeat: 'repeat',
-          backgroundPosition: 'center',
+          backgroundSize: "15px 15px", // Very small grid lines
+          backgroundRepeat: "repeat",
+          backgroundPosition: "center",
+          opacity: 0.05, // Dim the grid lines
           zIndex: 2,
-          transform: `translate(${backgroundX}px, ${backgroundY}px)`, // Apply the transform here
+          transform: `translate(${backgroundX}px, ${backgroundY}px)`,
         }}
-      ></motion.div>
+      />
+
+      {/* Darker radial background overlay for soft lighting effect */}
+      <div className="absolute inset-0 bg-[radial-gradient(50%_50%_at_center_center,rgb(74,32,138,.6)_15%,rgb(14,0,36,.9)_78%,transparent)] z-3"></div>
     </section>
   );
 };

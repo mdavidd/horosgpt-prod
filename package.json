@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@dotlottie/react-player": "^1.6.19",
+    "@heroicons/react": "^2.1.5",
     "@lottiefiles/dotlottie-react": "^0.7.2",
     "autoprefixer": "^10.4.20",
     "framer-motion": "^11.3.2",

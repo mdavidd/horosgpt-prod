@@ -16,7 +16,7 @@ const WhatIsAstrology = () => {
 
         {/* First Content Block */}
         <div className="grid gap-10 md:grid-cols-2 items-center mb-16 p-8 rounded-lg">
-          <div className="bg-purple-100/20 p-4 rounded-lg">
+          <div className="p-4 rounded-lg">
             <Image
               src="/whatIsAstro/1.gif"
               alt="Heliocentrični model: Sunce u središtu"
@@ -54,7 +54,7 @@ const WhatIsAstrology = () => {
               Iako znamo da Sunce sjedi u središtu našeg Sunčevog sustava (heliocentrični model), geocentrični model i dalje točno opisuje kretanje planeta s našeg zemaljskog gledišta.
             </p>
           </div>
-          <div className="bg-purple-100/20 p-4 rounded-lg">
+          <div className="p-4 rounded-lg">
             <Image
               src="/whatIsAstro/2.gif"
               alt="Geocentrični model: Zemlja u središtu"
@@ -70,7 +70,7 @@ const WhatIsAstrology = () => {
 
         {/* Third Content Block */}
         <div className="grid gap-10 md:grid-cols-2 items-center mb-16 p-8 rounded-lg">
-          <div className="bg-purple-100/20 p-4 rounded-lg">
+          <div className="p-4 rounded-lg">
             <Image
               src="/whatIsAstro/3.gif"
               alt="Kretanje Marsa s geocentrične perspektive"
@@ -108,7 +108,7 @@ const WhatIsAstrology = () => {
               Ovi planetarni pomaci, u odnosu na pozicije konstelacija, čine osnovu astrologije — kako se planeti pomiču kroz Zodijak, tako se mijenjaju energije koje oblikuju naše živote.
             </p>
           </div>
-          <div className="bg-purple-100/20 p-4 rounded-lg">
+          <div className="p-4 rounded-lg">
             <Image
               src="/whatIsAstro/4.png"
               alt="Zodijak i pozicija planeta"
@@ -123,7 +123,7 @@ const WhatIsAstrology = () => {
 
         {/* Fifth Content Block */}
         <div className="grid gap-10 md:grid-cols-2 items-center p-8 rounded-lg">
-          <div className="bg-purple-100/20 p-4 rounded-lg">
+          <div className="p-4 rounded-lg">
             <Image
               src="/whatIsAstro/5.png"
               alt="Zodijak s gledišta Zemlje"
