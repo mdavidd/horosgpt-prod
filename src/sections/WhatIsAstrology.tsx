@@ -18,7 +18,7 @@ const WhatIsAstrology = () => {
         <div className="grid gap-10 md:grid-cols-2 items-center mb-16 p-8 rounded-lg">
           <div className="p-4 rounded-lg">
             <Image
-              src="/whatIsAstro/1.gif"
+              src="/whatisAstro/1.gif"
               alt="Heliocentrični model: Sunce u središtu"
               width={500}
               height={300}
@@ -56,7 +56,7 @@ const WhatIsAstrology = () => {
           </div>
           <div className="p-4 rounded-lg">
             <Image
-              src="/whatIsAstro/2.gif"
+              src="/whatisAstro/2.gif"
               alt="Geocentrični model: Zemlja u središtu"
               width={500}
               height={300}
@@ -72,7 +72,7 @@ const WhatIsAstrology = () => {
         <div className="grid gap-10 md:grid-cols-2 items-center mb-16 p-8 rounded-lg">
           <div className="p-4 rounded-lg">
             <Image
-              src="/whatIsAstro/3.gif"
+              src="/whatisAstro/3.gif"
               alt="Kretanje Marsa s geocentrične perspektive"
               width={500}
               height={300}
@@ -110,7 +110,7 @@ const WhatIsAstrology = () => {
           </div>
           <div className="p-4 rounded-lg">
             <Image
-              src="/whatIsAstro/4.png"
+              src="/whatisAstro/4.png"
               alt="Zodijak i pozicija planeta"
               width={500}
               height={300}
@@ -125,7 +125,7 @@ const WhatIsAstrology = () => {
         <div className="grid gap-10 md:grid-cols-2 items-center p-8 rounded-lg">
           <div className="p-4 rounded-lg">
             <Image
-              src="/whatIsAstro/5.png"
+              src="/whatisAstro/5.png"
               alt="Zodijak s gledišta Zemlje"
               width={500}
               height={300}

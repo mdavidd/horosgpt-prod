@@ -6,7 +6,7 @@ const PlanetsAndSigns = () => {
     <section className="py-16 px-4 lg:px-16"> {/* Reduced padding */}
       <div className="max-w-5xl mx-auto text-center"> {/* Reduced width */}
         {/* Title */}
-        <h1 className="text-3xl font-bold mb-6 text-white">Planeti su glagoli, a znakovi su prilozi.</h1>
+        <h1 className="text-2xl font-bold mb-6 text-white">Planeti predstavljaju što radimo, a znakovi objašnjavaju kako to radimo.</h1>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 text-left mt-8"> {/* Reduced gap */}
           {/* Left Table - Planets */}
@@ -69,7 +69,7 @@ const PlanetsAndSigns = () => {
               <tbody>
                 <tr className="border-b border-gray-600">
                   <td className="py-2 px-3">♈ OVAN</td>
-                  <td className="py-2 px-3">natjecateljski, samostalano</td>
+                  <td className="py-2 px-3">natjecateljski, samostalno</td>
                 </tr>
                 <tr className="border-b border-gray-600">
                   <td className="py-2 px-3">♉ BIK</td>
